@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="main.css">
+        </head>
+        <body>
+            <a href="bfc.html">Calculate BFC</a>
+            <div class = "formBox">
+                <div class = "form-weight">
+                    <div class = "btns" >
+                        <div class = "btn" id = "wBtn"></div>
+                        <button type = "button" class = "toggleBtn" onclick= "isKg()">Kg</button>
+                        <button type = "button" class = "toggleBtn" onclick= "isLbs()">Lbs</button>
+                    </div>
+                
+                    <form>   
+                        <label for = "weight">Weight </label>
+                        <input type = "text" id = "w" class = "inputField" > 
+                    </form>
+                    <br>
+                </div>
+
+
+                <form class = "basic-info" hidden = "true"> 
+                    <label for ="name">Name</label>
+                    <input type = "text" id = "name"><br>
+                    <label for ="age">Age</label>
+                    <input type = "text" id = "age"><br>
+                </form>
+                
+
+                <div class = "form-height">
+                    <div class ="btns">
+                        <div class = "btn" id="hBtn"></div>
+                        <button type = "button" class = "toggleBtn" onclick= "isCm()">Cm</button>
+                        <button type = "button" class = "toggleBtn" id = "inFt" onclick= "isFt()" >ft/in</button>
+                    </div>
+                    <form>
+                        <label for = "tCm">Height</label>
+                        <input type = "text" id = "tCm" class = "inputField">
+                    </form>
+                    
+                    <form class = "Input" id = "usa">
+                        <input type = "text" id = "hFt" class = "inputField" >
+                        <input type = "text" id = "hIn" class = "inputField"> 
+                    </form>
+                    <br>
+                    <br>
+
+                </div>
+                <div class = "toggleBtn">
+                    <button type = "button" id = "BMIBtn" onclick=' togglePopupBMI()' class = "btn">Calculate BMI</button>
+                </div>
+            </div>
+           
+      
+            
+            <div class = "popup" id="resultPopup">
+                <div class = "overlay"></div>
+                <div class = "content">
+                    <div class = "closeBtn" onclick="togglePopupBMI()">&times</div>
+                    <div id = "results">
+                        <p>Your Bmi is<p>
+                        <p id = "oBMI">BMi here</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </body>
+        <script src = "Fitness-Web-App/functions.js"></script> 
+        <script src = "Fitness-Web-App/btnFunctionality.js"></script>
+           
+        
+        
+
+    </html>
